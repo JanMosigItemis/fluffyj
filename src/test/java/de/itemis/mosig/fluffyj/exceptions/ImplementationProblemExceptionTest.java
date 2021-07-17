@@ -25,7 +25,7 @@ public class ImplementationProblemExceptionTest {
 
     @Test
     public void constructor_with_throwable_does_not_accept_null() {
-        assertThatThrownBy(() -> new ImplementationProblemException(null)).isInstanceOf(NullPointerException.class).hasMessageContaining("cause");
+        assertThatThrownBy(() -> new ImplementationProblemException((Throwable) null)).isInstanceOf(NullPointerException.class).hasMessageContaining("cause");
     }
 
     @Test
@@ -49,5 +49,17 @@ public class ImplementationProblemExceptionTest {
         var underTest = new ImplementationProblemException(expectedDescription, expectedThrowable);
 
         assertThat(underTest.getMessage()).isEqualTo("An implementation problem occurred: " + expectedDescription + ": " + pretty(expectedThrowable));
+    }
+
+    @Test
+    public void constructor_with_string_constructs_expected_message() {
+        var msg = "msg";
+        var underTest = new ImplementationProblemException(msg);
+        assertThat(underTest.getMessage()).isEqualTo("An implementation problem occurred: " + msg);
+    }
+
+    @Test
+    public void constructor_with_string_does_not_accept_null() {
+        assertThatThrownBy(() -> new ImplementationProblemException((String) null)).isInstanceOf(NullPointerException.class).hasMessageContaining("msg");
     }
 }

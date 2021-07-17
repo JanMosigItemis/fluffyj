@@ -37,4 +37,13 @@ public final class ImplementationProblemException extends RuntimeException {
     public ImplementationProblemException(String description, Throwable cause) {
         super(DEFAULT_MSG + ": " + requireNonNull(description, "description") + ": " + pretty(requireNonNull(cause, "cause")));
     }
+
+    /**
+     * Sets a message based on a combination of {@code msg} and {@link #DEFAULT_MSG}.
+     *
+     * @param msg
+     */
+    public ImplementationProblemException(String msg) {
+        super(DEFAULT_MSG + ": " + requireNonNull(msg, "msg"));
+    }
 }

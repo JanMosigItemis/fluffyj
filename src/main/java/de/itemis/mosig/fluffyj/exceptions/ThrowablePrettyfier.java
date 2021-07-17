@@ -16,7 +16,7 @@ public final class ThrowablePrettyfier {
      * Construct a nice message out of a throwable's type and its message (if any). If the
      * {@code throwable} does not have a message, a default one will be used. May be used for
      * logging purposes.
-     * 
+     *
      * @param t The {@link Throwable} to construct the message for.
      * @return A nice message.
      */
