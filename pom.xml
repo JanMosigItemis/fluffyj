@@ -10,7 +10,7 @@
 	<version>1.1.0</version>
 
 	<name>Fluffy J</name>
-	<description>A library that tries to put a little fluff ❤ into the daily life of Java developers.</description>
+	<description>A library that tries to put a little fluff ❤ into the daily life of Java developers</description>
 
 	<packaging>jar</packaging>
 
