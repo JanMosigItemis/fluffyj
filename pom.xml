@@ -5,9 +5,9 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>de.itemis.mosig.fluffy</groupId>
-	<artifactId>de.itemis.mosig.fluffyj</artifactId>
-	<version>1.0.0</version>
+	<groupId>de.itemis</groupId>
+	<artifactId>fluffyj</artifactId>
+	<version>1.1.0</version>
 
 	<name>Fluffy J</name>
 	<description>A library that tries to put a little fluff ❤ into the daily life of Java developers.</description>
